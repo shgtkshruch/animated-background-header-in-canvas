@@ -1,0 +1,22 @@
+{
+  "name": "animated-background-header-in-canvas",
+  "scripts": {
+    "publish": "./github-pages.sh"
+  },
+  "devDependencies": {
+    "gulp": "*",
+    "gulp-jade": "*",
+    "gulp-ruby-sass": "*",
+    "browser-sync": "*",
+    "gulp-coffee": "*",
+    "gulp-plumber": "*",
+    "gulp-changed": "*",
+    "gulp-filter": "*",
+    "gulp-useref": "*",
+    "gulp-autoprefixer": "*",
+    "gulp-load-plugins": "*",
+    "wiredep": "*",
+    "coffee-script": "*"
+  }
+}
+
