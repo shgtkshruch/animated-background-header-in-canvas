@@ -1,5 +1,6 @@
 window.onload = ->
   drow_canvas()
+  window.addEventListener 'resize', drow_canvas
 
 drow_canvas = ->
   canvas = document.getElementById 'c'
@@ -7,18 +8,18 @@ drow_canvas = ->
   cw = canvas.width = window.innerWidth
   ch = canvas.height = window.innerHeight
   circles = []
-  num = cw / 2
+  num = cw / 3
 
   class Circle
     constructor: ->
       @x = Math.random() * cw
       @y = ch + Math.random() * 100
       @r = 1 + Math.random() * 5
-      @alpha = 0.2 + Math.random() * 0.3
+      @alpha = 0.1 + Math.random() * 0.3
       @velocity = Math.random()
 
     draw: ->
-      @alpha -= 0.0005
+      @alpha -= 0.0003
 
       @constructor() if @alpha < 0
 
